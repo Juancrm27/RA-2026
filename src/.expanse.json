@@ -28,7 +28,7 @@
         "color": "#FFFFFF",
         "textureSrc": {
           "type": "asset",
-          "asset": "assets/magic-photos/waves.mp4"
+          "asset": "assets/video/waves.mp4"
         }
       },
       "parentId": "76491f9f-4688-41f0-883e-800638229196",
@@ -156,7 +156,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/playing-cards/0_Card_Container.gltf/0_Card_Container.gltf"
+          "asset": "assets/models/0_Card_Container.gltf/0_Card_Container.gltf"
         },
         "animationClip": "",
         "loop": true
@@ -192,7 +192,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/playing-cards/0_Card_Front.gltf/0_Card_Front.gltf"
+          "asset": "assets/models/0_Card_Front.gltf/0_Card_Front.gltf"
         },
         "animationClip": "",
         "loop": true
@@ -204,7 +204,7 @@
       "id": "a7311d60-5ab5-4f57-b15a-47b698ac29cf",
       "position": [
         0,
-        -0.27574988518970145,
+        -0.10741635344888589,
         0.316921394554428
       ],
       "rotation": [
@@ -214,32 +214,20 @@
         1
       ],
       "scale": [
-        0.1,
-        0.1,
-        0.1
+        0.05,
+        0.05,
+        0.05
       ],
       "geometry": null,
       "material": null,
       "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {
-        "b4e11433-9f1c-4d47-8c15-847fe87657f1": {
-          "id": "b4e11433-9f1c-4d47-8c15-847fe87657f1",
-          "name": "scale-animation",
-          "parameters": {
-            "autoFrom": true,
-            "toX": 0.5,
-            "toY": 0.5,
-            "toZ": 0.5,
-            "loop": true
-          }
-        }
-      },
+      "components": {},
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/esferas.glb"
+          "asset": "assets/models/esferas.glb"
         },
-        "animationClip": "",
+        "animationClip": "*",
         "loop": true
       },
       "name": "Esferas",
@@ -275,13 +263,13 @@
               "type": "entity",
               "id": "bf7fad6f-2adb-4b93-955d-65a6e8cf9fb9"
             },
-            "imageTargetName": "waves"
+            "imageTargetName": "ojos-clara"
           }
         }
       },
       "name": "Image Target",
       "imageTarget": {
-        "name": "waves"
+        "name": "ojos-clara"
       },
       "order": 5
     },

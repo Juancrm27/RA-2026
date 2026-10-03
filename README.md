@@ -1,61 +1,67 @@
-# Studio: Image Targets
+# RA 2026 · Ojos Clara
 
-This project demonstrates how to use Image Targets to anchor virtual content to images in the real world.
-There are multiple spaces in this project that showcase different types of image targets.
+Experiencia de realidad aumentada hecha con [8th Wall Studio](https://8thwall.org). Al apuntar la cámara a la obra *Ojos Clara*, aparece contenido anclado a la imagen: video, modelos 3D con animación y un occluder. Tiene un botón para sacar foto (tocar) o grabar video (mantener).
 
-![Preview of the image targets project open in the editor](./src/assets/preview.png)
+<img alt="Target Ojos Clara" src="./image-targets/ojos-clara_original.jpg" width=300 />
 
-<details><summary>Try it out</summary>
+## Estructura
 
-https://8thwall.org/studio-image-targets-example
+```
+image-targets/            Target de imagen (lo genera la app de 8th Wall al importar)
+  ojos-clara.json         Configuración del target (nombre, recorte)
+  ojos-clara_*.jpg        Original, recorte, luminancia y miniatura
+src/
+  .expanse.json           Escena de 8th Wall Studio (se edita desde la app)
+  app.js                  Carga el target en el motor de tracking
+  index.html              Página base
+  components/
+    capture-button.js     Botón de foto / video
+    video-pause-on-lost.ts  Reproduce el video al encontrar el target y lo pausa al perderlo
+  assets/
+    models/               Modelos 3D (.glb / .gltf)
+    video/                Videos
+config/                   Build con webpack (no hace falta tocarlo)
+```
 
-<img alt="QR Code for the preview link" src="https://8th.io/qr?v=2&url=https://8thwall.org/studio-image-targets-example" width=250 height=250 />
+### La escena
 
-## Playing Cards
+```
+Principal
+├── Camera, Ambient Light, Directional Light
+└── Image Target (ojos-clara)
+    ├── Occluder   caja invisible (material hider) detrás de la imagen
+    ├── Video      plano con assets/video/waves.mp4
+    ├── 0_Card_Front / 0_Card_Container
+    └── Esferas    con scale-animation
+```
 
-<img alt="Fire Image Target" src="./image-targets/20_Element_Fire_original.png" width=400 />
-<img alt="Water Image Target" src="./image-targets/23_Element_Water_original.png" width=400 />
-<img alt="Air Image Target" src="./image-targets/22_Element_Air_original.png" width=400 />
-<img alt="Earth" src="./image-targets/25_Element_Earth_original.png" width=400 />
+## Cambiar el target
 
-## BMO Bites
+1. Importa la imagen nueva desde la app de 8th Wall (panel *Image Targets*). Evita bordes negros agregados: el recorte debe tener la mayor parte de la imagen real.
+2. Pon el nombre del target en el objeto *Image Target* de la escena y en el parámetro *imageTargetName* del componente *Pause Video on Image Target Lost*.
+3. Cambia el `require` en [src/app.js](src/app.js) al nuevo `.json`.
 
-<img alt="Cereal Box Image Target" src="./image-targets/bmo-bites_original.png" width=400 />
+Los tres nombres tienen que coincidir, si no el target no se detecta.
 
-## Magic Photos
+## Desarrollo
 
-<img alt="Waves Image Target" src="./image-targets/waves_original.jpg" width=400 />
+Con la app de escritorio: [instálala](https://8thwall.org/downloads), haz clic en *Open* y elige esta carpeta.
 
-## Toggle SLAM
-
-<img alt="Scan to Toggle SLAM Image Target" src="./image-targets/toggle-slam_original.png" width=400 />
-
-</details>
-
-## Usage
-
-1. [Install the Desktop App](https://8thwall.org/downloads)
-2. On this repository, click Code > Download zip
-3. Unzip the folder to the location you'd like to work in
-4. In the desktop app, click "Open" and select the folder
-5. To connect to a mobile device, follow [these instructions](https://8th.io/connect-device)
-6. When importing your own targets, please see [this guide](https://8thwall.org/docs/studio/guides/xr/image-targets) for more information
-7. Recommended: Track your files using [git](https://git-scm.com/about) to avoid losing progress
-
-## Deployment
-
-This project is configured for Netlify via `netlify.toml` (build: `npm run build`, publish: `dist`). Import the GitHub repo in Netlify and every push to `main` redeploys. You can also follow the publishing instructions here: https://8thwall.org/docs/getting-started/publishing to publish to any other web host.
-
-## Testing on a phone without the Desktop app
+Sin la app, para probar en el celular:
 
 ```bash
 npm install
 npm run dev -- --host
 ```
 
-Open `https://<your-computer-ip>:8080` on the phone (same Wi-Fi) and accept the self-signed certificate warning.
+Abre en el celular la dirección `https://<ip-de-tu-computadora>:<puerto>` que aparece en la terminal (misma red Wi-Fi) y acepta la advertencia del certificado.
 
-## Questions?
+> No edites `src/.expanse.json` a mano con la app abierta: al guardar, la app sobrescribe el archivo.
 
-Please raise any questions on [Github Discussions](https://github.com/orgs/8thwall/discussions) or join the [Discord](https://8th.io/discord) to connect with the community.
+## Publicación
 
+Configurado para Netlify en `netlify.toml` (build: `npm run build`, publica `dist`). Cada push a `main` vuelve a publicar si el repo está conectado en Netlify.
+
+## Créditos
+
+Basado en el ejemplo [Studio: Image Targets](https://github.com/8thwall) de 8th Wall (licencia en [LICENSE](LICENSE)).

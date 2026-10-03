@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 160,
+    "left": 0,
+    "width": 720,
+    "height": 960,
+    "isRotated": true,
+    "originalWidth": 720,
+    "originalHeight": 1280
+  },
+  "imagePath": "image-targets/ojos-clara_luminance.jpg",
+  "metadata": null,
+  "name": "ojos-clara",
+  "resources": {
+    "originalImage": "ojos-clara_original.jpg",
+    "croppedImage": "ojos-clara_cropped.jpg",
+    "thumbnailImage": "ojos-clara_thumbnail.jpg",
+    "luminanceImage": "ojos-clara_luminance.jpg"
+  },
+  "created": 1791052965622,
+  "updated": 1791052965622
+}

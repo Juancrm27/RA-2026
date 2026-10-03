@@ -1,7 +1,7 @@
 const onxrloaded = () => {
   XR8.XrController.configure({
     imageTargetData: [
-      require('../image-targets/waves.json'),
+      require('../image-targets/ojos-clara.json'),
     ],
   })
   XR8.addCameraPipelineModule(LandingPage.pipelineModule())
