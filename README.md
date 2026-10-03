@@ -1,44 +1,61 @@
-# A-Frame: Image Targets
+# Studio: Image Targets
 
-This example uses image targets to display information about jellyfish on a flyer. It uses the xrextras-named-image-target component to connect an <a-entity> to an image target by name while the xrextras-play-video component enables video playback.
+This project demonstrates how to use Image Targets to anchor virtual content to images in the real world.
+There are multiple spaces in this project that showcase different types of image targets.
 
-![Preview of the experience showing a printed flyer with a 3D jellyfish and playable video aligned to the graphics](./src/assets/screenshot-flyer.jpg)
+![Preview of the image targets project open in the editor](./src/assets/preview.png)
 
 <details><summary>Try it out</summary>
 
-https://8thwall.org/aframe-image-targets-example/
+https://8thwall.org/studio-image-targets-example
 
-<img alt="QR Code for the preview link" src="https://8th.io/qr?v=2&url=https://8thwall.org/aframe-image-targets-example/" width=250 height=250 />
+<img alt="QR Code for the preview link" src="https://8th.io/qr?v=2&url=https://8thwall.org/studio-image-targets-example" width=250 height=250 />
 
-![Flyer design showing image targets](./src/assets/flyer.jpg)
+## Playing Cards
+
+<img alt="Fire Image Target" src="./image-targets/20_Element_Fire_original.png" width=400 />
+<img alt="Water Image Target" src="./image-targets/23_Element_Water_original.png" width=400 />
+<img alt="Air Image Target" src="./image-targets/22_Element_Air_original.png" width=400 />
+<img alt="Earth" src="./image-targets/25_Element_Earth_original.png" width=400 />
+
+## BMO Bites
+
+<img alt="Cereal Box Image Target" src="./image-targets/bmo-bites_original.png" width=400 />
+
+## Magic Photos
+
+<img alt="Waves Image Target" src="./image-targets/waves_original.jpg" width=400 />
+
+## Toggle SLAM
+
+<img alt="Scan to Toggle SLAM Image Target" src="./image-targets/toggle-slam_original.png" width=400 />
 
 </details>
 
 ## Usage
 
-1. On this repository, click **Code** > **Download ZIP**. If you clone the repository instead, make sure you have Git LFS installed and run `git lfs pull`
-2. Unzip the folder to the location you'd like to work in
-3. `npm install`
-4. `npm run serve`
-5. To connect to a mobile device, follow [these instructions](https://8th.io/test-on-mobile)
-6. Recommended: Track your files using [git](https://git-scm.com/about) to avoid losing progress
-
-### Preparing Target Images
-
-Image targets can be generated using the interactive CLI tool: 
-
-```bash
-npx @8thwall/image-target-cli@latest
-```
-
-More information can be found here: https://github.com/8thwall/8thwall/blob/main/apps/image-target-cli/README.md
-
-You can also use the [8th Wall Desktop app](https://8thwall.org/downloads) to generate image targets, then copy them into this project to use them in A-Frame.
+1. [Install the Desktop App](https://8thwall.org/downloads)
+2. On this repository, click Code > Download zip
+3. Unzip the folder to the location you'd like to work in
+4. In the desktop app, click "Open" and select the folder
+5. To connect to a mobile device, follow [these instructions](https://8th.io/connect-device)
+6. When importing your own targets, please see [this guide](https://8thwall.org/docs/studio/guides/xr/image-targets) for more information
+7. Recommended: Track your files using [git](https://git-scm.com/about) to avoid losing progress
 
 ## Deployment
 
-This project contains Github Actions configuration for deployment to Github Pages, which triggers automatically by pushing the `main` branch. You can also create a production build using `npm run build`, which outputs the production build to the `dist` folder, and publish to the web using [this guide](https://8thwall.org/docs/getting-started/publishing#self-hosting-your-project).
+This project is configured for Netlify via `netlify.toml` (build: `npm run build`, publish: `dist`). Import the GitHub repo in Netlify and every push to `main` redeploys. You can also follow the publishing instructions here: https://8thwall.org/docs/getting-started/publishing to publish to any other web host.
+
+## Testing on a phone without the Desktop app
+
+```bash
+npm install
+npm run dev -- --host
+```
+
+Open `https://<your-computer-ip>:8080` on the phone (same Wi-Fi) and accept the self-signed certificate warning.
 
 ## Questions?
 
 Please raise any questions on [Github Discussions](https://github.com/orgs/8thwall/discussions) or join the [Discord](https://8th.io/discord) to connect with the community.
+

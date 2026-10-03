@@ -1,6 +1,7 @@
 // Runs webpack-dev-server over HTTPS (required for camera access on phones).
 // Accepts a bare `--host` (Vite style) and expands it to `--host 0.0.0.0`
 // so the server is reachable from other devices on the network.
+// The `serve` script is left untouched for the 8th Wall Desktop app.
 const {spawn} = require('child_process')
 const path = require('path')
 
@@ -19,6 +20,8 @@ const child = spawn(process.execPath, [
   '--mode=development',
   '--config', path.join(__dirname, 'webpack.config.js'),
   '--server-type', 'https',
+  // Use the page's own protocol/host/port so hot reload works over HTTPS on the phone.
+  '--client-web-socket-url', 'auto://0.0.0.0:0/ws',
   ...args,
 ], {stdio: 'inherit'})
 
