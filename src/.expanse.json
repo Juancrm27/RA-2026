@@ -1,47 +1,5 @@
 {
   "objects": {
-    "bf7fad6f-2adb-4b93-955d-65a6e8cf9fb9": {
-      "id": "bf7fad6f-2adb-4b93-955d-65a6e8cf9fb9",
-      "position": [
-        0,
-        0,
-        -0.44
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1.3,
-        1.3,
-        1.3
-      ],
-      "geometry": {
-        "type": "plane",
-        "width": 1,
-        "height": 0.5625
-      },
-      "material": {
-        "type": "unlit",
-        "color": "#FFFFFF",
-        "textureSrc": {
-          "type": "asset",
-          "asset": "assets/video/waves.mp4"
-        }
-      },
-      "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {},
-      "name": "Video",
-      "videoControls": {
-        "paused": true,
-        "loop": true,
-        "positional": true
-      },
-      "order": 1,
-      "hidden": false
-    },
     "5a978218-72c3-4861-af58-541f3cf2b778": {
       "id": "5a978218-72c3-4861-af58-541f3cf2b778",
       "position": [
@@ -132,12 +90,12 @@
       },
       "order": 3.9273918594562236
     },
-    "230a1b26-689c-4874-a3d5-b977564a07c6": {
-      "id": "230a1b26-689c-4874-a3d5-b977564a07c6",
+    "e3229a5c-8c47-408d-bf87-2284f566bd62": {
+      "id": "e3229a5c-8c47-408d-bf87-2284f566bd62",
       "position": [
+        -1.6434602192104412e-32,
         0,
-        0,
-        0.04180464141521578
+        0.009493589755826148
       ],
       "rotation": [
         0,
@@ -147,44 +105,8 @@
       ],
       "scale": [
         0.26,
-        0.31999999999999995,
-        0.31999999999999995
-      ],
-      "geometry": null,
-      "material": {
-        "type": "hider"
-      },
-      "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/models/0_Card_Container.gltf/0_Card_Container.gltf"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "0_Card_Container.gltf",
-      "order": 1.6149770470650364,
-      "hidden": false
-    },
-    "e3229a5c-8c47-408d-bf87-2284f566bd62": {
-      "id": "e3229a5c-8c47-408d-bf87-2284f566bd62",
-      "position": [
-        -1.6434602192104412e-32,
-        0,
-        0.08863276928227282
-      ],
-      "rotation": [
-        0,
-        0,
-        0.7071067811865475,
-        0.7071067811865476
-      ],
-      "scale": [
-        0.35,
-        0.35000000000000003,
-        0.35000000000000003
+        0.32,
+        0.3
       ],
       "geometry": null,
       "material": {
@@ -202,48 +124,15 @@
         "loop": true
       },
       "name": "0_Card_Front.gltf",
-      "order": 1.066453141236023
-    },
-    "a7311d60-5ab5-4f57-b15a-47b698ac29cf": {
-      "id": "a7311d60-5ab5-4f57-b15a-47b698ac29cf",
-      "position": [
-        0,
-        -0.10741635344888589,
-        0.316921394554428
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.05,
-        0.05,
-        0.05
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/models/esferas.glb"
-        },
-        "animationClip": "*",
-        "loop": true
-      },
-      "name": "Esferas",
-      "order": 3.176726049470698,
-      "hidden": true
+      "order": 1.066453141236023,
+      "hidden": false
     },
     "76491f9f-4688-41f0-883e-800638229196": {
       "id": "76491f9f-4688-41f0-883e-800638229196",
       "position": [
         0,
-        2,
-        -4.97
+        0,
+        0
       ],
       "rotation": [
         0,
@@ -252,9 +141,9 @@
         1
       ],
       "scale": [
-        3,
-        3,
-        3
+        1,
+        1,
+        1
       ],
       "geometry": null,
       "material": null,
@@ -276,46 +165,14 @@
       "imageTarget": {
         "name": "waves_original"
       },
-      "order": 5
-    },
-    "4dae4d21-ddba-4d1a-85e6-8b2643ab042c": {
-      "id": "4dae4d21-ddba-4d1a-85e6-8b2643ab042c",
-      "position": [
-        0,
-        0,
-        -0.501
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": {
-        "type": "box",
-        "width": 1,
-        "height": 0.5625,
-        "depth": 1
-      },
-      "material": {
-        "type": "hider"
-      },
-      "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {},
-      "name": "Occluder",
-      "order": 0,
-      "hidden": true
+      "order": 5,
+      "hidden": false
     },
     "40be8631-a710-44cc-8b70-2b6060ca744c": {
       "id": "40be8631-a710-44cc-8b70-2b6060ca744c",
       "position": [
-        -0.10968613322695672,
-        -0.16825182355071056,
+        -0.01104321104873826,
+        -0.11132003599914514,
         -0.05096436748996713
       ],
       "rotation": [
@@ -345,7 +202,76 @@
         "loop": true
       },
       "name": "animated_swimming_tropical_fish_school_loop.glb",
-      "order": -1.3278739817084106
+      "order": -1.3278739817084106,
+      "hidden": false
+    },
+    "fd71e216-f187-4e03-b906-1cdc1ff0f776": {
+      "id": "fd71e216-f187-4e03-b906-1cdc1ff0f776",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.57,
+        0.57,
+        0.57
+      ],
+      "geometry": null,
+      "material": {
+        "type": "hider"
+      },
+      "parentId": "76491f9f-4688-41f0-883e-800638229196",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/occluder.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "occluder.glb",
+      "order": -2.76972285324093
+    },
+    "f3361a6e-4d2e-4812-8d06-2684825d5436": {
+      "id": "f3361a6e-4d2e-4812-8d06-2684825d5436",
+      "position": [
+        0,
+        0,
+        -0.010984381812578992
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "76491f9f-4688-41f0-883e-800638229196",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/fondo.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "fondo.glb",
+      "order": -2.0796091485611754
     }
   },
   "spaces": {
