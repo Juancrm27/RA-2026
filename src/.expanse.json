@@ -730,8 +730,8 @@
       "id": "91576797-b198-4057-89f6-e37f24fbb359",
       "position": [
         0,
-        0.4883078761413766,
-        -2.168404344971009e-19
+        0.21772033144737063,
+        0.27175692892820114
       ],
       "rotation": [
         0,
@@ -826,7 +826,7 @@
       "id": "3b49cf5d-d1e2-429f-b60a-2c64b327b887",
       "position": [
         0,
-        0,
+        -0.2918900136215071,
         0
       ],
       "rotation": [
@@ -897,10 +897,9 @@
           "id": "1b7e28d5-3787-4a01-a9cd-8712cc181735",
           "name": "space-selector",
           "parameters": {
-            "space1": "Playing Cards",
-            "space2": "BMO Bites",
-            "space3": "Magic Photos",
-            "space4": "Toggle SLAM",
+            "space1": "BMO Bites",
+            "space2": "Magic Photos",
+            "space3": "Toggle SLAM",
             "option1": {
               "type": "entity",
               "id": "fec36eea-c33c-4a66-be5e-efa6ffd3122e"
@@ -912,10 +911,6 @@
             "option3": {
               "type": "entity",
               "id": "c7f670c8-1e4c-4d19-b184-88b75c1365d2"
-            },
-            "option4": {
-              "type": "entity",
-              "id": "377b65a9-0810-4e9a-8efd-261b32b1bd8b"
             },
             "activeSpaceName": {
               "type": "entity",
@@ -933,10 +928,6 @@
               "type": "entity",
               "id": "20faf88a-fb59-4a83-a630-e7994595f1a3"
             },
-            "option4Name": {
-              "type": "entity",
-              "id": "1e7e0039-7176-4466-bd06-f9551ceddb29"
-            },
             "option1Icon": {
               "type": "entity",
               "id": "6a07d5fb-378e-4f4d-be62-33364ea12b5b"
@@ -948,10 +939,6 @@
             "option3Icon": {
               "type": "entity",
               "id": "1d20157c-437c-412f-8bee-4a2cb79175bc"
-            },
-            "option4Icon": {
-              "type": "entity",
-              "id": "3906f324-c3a8-4737-ae33-0bb2e274b1f2"
             }
           }
         }
@@ -1117,7 +1104,7 @@
         "borderWidth": 1,
         "flexDirection": "column",
         "width": "100%",
-        "height": 150,
+        "height": 115,
         "type": "3d",
         "background": "#0f0e1a",
         "backgroundOpacity": 1,
@@ -1373,75 +1360,6 @@
       },
       "order": 12
     },
-    "377b65a9-0810-4e9a-8efd-261b32b1bd8b": {
-      "id": "377b65a9-0810-4e9a-8efd-261b32b1bd8b",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "6143184f-aff4-4821-9a14-1f7510d051ce",
-      "components": {},
-      "ui": {
-        "type": "3d",
-        "width": "100%",
-        "height": 35,
-        "flexDirection": "row",
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Option 4",
-      "order": 14
-    },
-    "1e7e0039-7176-4466-bd06-f9551ceddb29": {
-      "id": "1e7e0039-7176-4466-bd06-f9551ceddb29",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "377b65a9-0810-4e9a-8efd-261b32b1bd8b",
-      "components": {},
-      "name": "Option 4 Name",
-      "ui": {
-        "width": "80%",
-        "height": 20,
-        "text": "Option 4",
-        "color": "#ffffff",
-        "fontSize": 16,
-        "textAlign": "left",
-        "verticalTextAlign": "center"
-      },
-      "order": 15
-    },
     "8f308536-a4d6-47ed-bc5f-d16d3e5e4b8b": {
       "id": "8f308536-a4d6-47ed-bc5f-d16d3e5e4b8b",
       "position": [
@@ -1516,44 +1434,6 @@
       "name": "Option 3 Icon",
       "order": 14.045801568271127,
       "parentId": "c7f670c8-1e4c-4d19-b184-88b75c1365d2",
-      "hidden": true
-    },
-    "3906f324-c3a8-4737-ae33-0bb2e274b1f2": {
-      "id": "3906f324-c3a8-4737-ae33-0bb2e274b1f2",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "components": {},
-      "ui": {
-        "type": "3d",
-        "width": 10,
-        "height": 10,
-        "image": {
-          "type": "asset",
-          "asset": "assets/common/check.svg"
-        },
-        "backgroundOpacity": 0.95,
-        "background": "#ffffff",
-        "backgroundSize": "contain"
-      },
-      "name": "Option 4 Icon",
-      "order": 17.028744183474238,
-      "parentId": "377b65a9-0810-4e9a-8efd-261b32b1bd8b",
       "hidden": true
     },
     "230a1b26-689c-4874-a3d5-b977564a07c6": {
