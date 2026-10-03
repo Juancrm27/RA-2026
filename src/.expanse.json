@@ -254,14 +254,25 @@
         1
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        0.6,
+        0.6,
+        0.6
       ],
       "geometry": null,
       "material": null,
       "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {},
+      "components": {
+        "91b75f90-aa95-4f84-a8e0-4f151a752c84": {
+          "id": "91b75f90-aa95-4f84-a8e0-4f151a752c84",
+          "name": "Caustics",
+          "parameters": {
+            "intensity": 0.35,
+            "repeat": 4,
+            "speed": 0.02,
+            "color": "#bff6ff"
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
@@ -272,6 +283,46 @@
       },
       "name": "fondo.glb",
       "order": -2.0796091485611754
+    },
+    "68040b7c-138c-4bbb-8f5f-b09c43391344": {
+      "id": "68040b7c-138c-4bbb-8f5f-b09c43391344",
+      "position": [
+        0,
+        0.6,
+        -0.35
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "76491f9f-4688-41f0-883e-800638229196",
+      "components": {
+        "3e682a74-b0eb-4e74-af65-4980bb2bbd2f": {
+          "id": "3e682a74-b0eb-4e74-af65-4980bb2bbd2f",
+          "name": "Light Rays",
+          "parameters": {
+            "count": 7,
+            "length": 1.2,
+            "width": 0.12,
+            "spreadX": 0.45,
+            "spreadZ": 0.25,
+            "tilt": 18,
+            "opacity": 0.22,
+            "color": "#c8fbff"
+          }
+        }
+      },
+      "name": "Rayos de Luz",
+      "order": 6
     }
   },
   "spaces": {
