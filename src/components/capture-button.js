@@ -7,13 +7,14 @@ const MAX_VIDEO_MS = 30000
 const css = `
 #capture-btn {
   position: fixed; left: 50%; bottom: calc(28px + env(safe-area-inset-bottom));
-  transform: translateX(-50%); z-index: 1000;
+  transform: translateX(-50%); z-index: 1000; display: none;
   width: 72px; height: 72px; border-radius: 50%;
   border: 5px solid #fff; background: rgba(255,255,255,0.25);
   box-shadow: 0 2px 10px rgba(0,0,0,0.4);
   touch-action: none; -webkit-user-select: none; user-select: none;
   -webkit-tap-highlight-color: transparent; transition: background 0.15s, transform 0.15s;
 }
+body.capture-ready #capture-btn { display: block; }
 #capture-btn:active { transform: translateX(-50%) scale(0.92); }
 #capture-btn.recording { background: #e53935; border-color: #fff; }
 #capture-progress {
@@ -24,10 +25,11 @@ const css = `
 }
 #capture-hint {
   position: fixed; left: 50%; bottom: calc(112px + env(safe-area-inset-bottom));
-  transform: translateX(-50%); z-index: 1000; pointer-events: none;
+  transform: translateX(-50%); z-index: 1000; pointer-events: none; display: none;
   color: #fff; font: 13px/1.2 sans-serif; text-shadow: 0 1px 3px #000;
   transition: opacity 0.5s; white-space: nowrap;
 }
+body.capture-ready #capture-hint { display: block; }
 #capture-preview {
   position: fixed; inset: 0; z-index: 1001; display: none;
   flex-direction: column; align-items: center; justify-content: center; gap: 16px;
@@ -62,9 +64,8 @@ const buildUi = () => {
   actions.append(save, close)
   preview.append(media, actions)
   document.body.append(button, progress, hint, preview)
-  setTimeout(() => { hint.style.opacity = '0' }, 4000)
 
-  return {button, progress, preview, media, save, close}
+  return {button, progress, hint, preview, media, save, close}
 }
 
 const showPreview = (ui, blob, kind) => {
@@ -150,6 +151,16 @@ const setup = () => {
   XR8.addCameraPipelineModule(XR8.MediaRecorder.pipelineModule())
 
   const ui = buildUi()
+
+  // El botón solo se muestra cuando la cámara ya está corriendo (no en la carga ni en los permisos).
+  XR8.addCameraPipelineModule({
+    name: 'capture-button-visibility',
+    onStart: () => {
+      document.body.classList.add('capture-ready')
+      setTimeout(() => { ui.hint.style.opacity = '0' }, 4000)
+    },
+    onDetach: () => document.body.classList.remove('capture-ready'),
+  })
   let holdTimer = null
   let recording = false
 

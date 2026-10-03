@@ -39,7 +39,8 @@
         "loop": true,
         "positional": true
       },
-      "order": 1
+      "order": 1,
+      "hidden": true
     },
     "5a978218-72c3-4861-af58-541f3cf2b778": {
       "id": "5a978218-72c3-4861-af58-541f3cf2b778",
@@ -162,7 +163,8 @@
         "loop": true
       },
       "name": "0_Card_Container.gltf",
-      "order": 1.6149770470650364
+      "order": 1.6149770470650364,
+      "hidden": false
     },
     "e3229a5c-8c47-408d-bf87-2284f566bd62": {
       "id": "e3229a5c-8c47-408d-bf87-2284f566bd62",
@@ -178,9 +180,9 @@
         0.7071067811865476
       ],
       "scale": [
-        0.4,
-        0.4,
-        0.4
+        0.35,
+        0.35000000000000003,
+        0.35000000000000003
       ],
       "geometry": null,
       "material": {
@@ -231,7 +233,8 @@
         "loop": true
       },
       "name": "Esferas",
-      "order": 3.176726049470698
+      "order": 3.176726049470698,
+      "hidden": true
     },
     "76491f9f-4688-41f0-883e-800638229196": {
       "id": "76491f9f-4688-41f0-883e-800638229196",
@@ -304,6 +307,42 @@
       "components": {},
       "name": "Occluder",
       "order": 0
+    },
+    "40be8631-a710-44cc-8b70-2b6060ca744c": {
+      "id": "40be8631-a710-44cc-8b70-2b6060ca744c",
+      "position": [
+        -0.10968613322695672,
+        -0.16825182355071056,
+        -0.05096436748996713
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "geometry": null,
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "76491f9f-4688-41f0-883e-800638229196",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/animated_swimming_tropical_fish_school_loop.glb"
+        },
+        "animationClip": "*",
+        "loop": true
+      },
+      "name": "animated_swimming_tropical_fish_school_loop.glb",
+      "order": -1.3278739817084106
     }
   },
   "spaces": {
