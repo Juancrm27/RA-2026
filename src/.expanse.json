@@ -5,7 +5,7 @@
       "position": [
         0,
         0,
-        0
+        -0.44
       ],
       "rotation": [
         0,
@@ -14,9 +14,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        1.3,
+        1.3,
+        1.3
       ],
       "geometry": {
         "type": "plane",
@@ -40,7 +40,7 @@
         "positional": true
       },
       "order": 1,
-      "hidden": true
+      "hidden": false
     },
     "5a978218-72c3-4861-af58-541f3cf2b778": {
       "id": "5a978218-72c3-4861-af58-541f3cf2b778",
@@ -151,7 +151,9 @@
         0.31999999999999995
       ],
       "geometry": null,
-      "material": null,
+      "material": {
+        "type": "hider"
+      },
       "parentId": "76491f9f-4688-41f0-883e-800638229196",
       "components": {},
       "gltfModel": {
@@ -306,7 +308,8 @@
       "parentId": "76491f9f-4688-41f0-883e-800638229196",
       "components": {},
       "name": "Occluder",
-      "order": 0
+      "order": 0,
+      "hidden": true
     },
     "40be8631-a710-44cc-8b70-2b6060ca744c": {
       "id": "40be8631-a710-44cc-8b70-2b6060ca744c",
