@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 371,
+    "width": 540,
+    "height": 720,
+    "isRotated": false,
+    "originalWidth": 1280,
+    "originalHeight": 720
+  },
+  "imagePath": "image-targets/waves_original_luminance.jpg",
+  "metadata": null,
+  "name": "waves_original",
+  "resources": {
+    "originalImage": "waves_original_original.jpg",
+    "croppedImage": "waves_original_cropped.jpg",
+    "thumbnailImage": "waves_original_thumbnail.jpg",
+    "luminanceImage": "waves_original_luminance.jpg"
+  },
+  "created": 1791054029568,
+  "updated": 1791054047140
+}

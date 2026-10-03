@@ -263,13 +263,13 @@
               "type": "entity",
               "id": "bf7fad6f-2adb-4b93-955d-65a6e8cf9fb9"
             },
-            "imageTargetName": "ojos-clara"
+            "imageTargetName": "waves_original"
           }
         }
       },
       "name": "Image Target",
       "imageTarget": {
-        "name": "ojos-clara"
+        "name": "waves_original"
       },
       "order": 5
     },
