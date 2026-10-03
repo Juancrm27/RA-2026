@@ -1,8 +1,6 @@
 const onxrloaded = () => {
   XR8.XrController.configure({
     imageTargetData: [
-      require('../image-targets/bmo-bites.json'),
-      require('../image-targets/toggle-slam.json'),
       require('../image-targets/waves.json'),
     ],
   })
