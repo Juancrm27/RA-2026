@@ -192,7 +192,21 @@
         "color": "#FFFFFF"
       },
       "parentId": "76491f9f-4688-41f0-883e-800638229196",
-      "components": {},
+      "components": {
+        "8daa8f77-8675-4591-8f9b-87afd8eb7cbe": {
+          "id": "8daa8f77-8675-4591-8f9b-87afd8eb7cbe",
+          "name": "Fish Bubbles",
+          "parameters": {
+            "rate": 0.5,
+            "size": 0.014,
+            "riseSpeed": 0.09,
+            "lifetime": 4,
+            "wobble": 0.012,
+            "maxBubbles": 60,
+            "opacity": 0.9
+          }
+        }
+      },
       "gltfModel": {
         "src": {
           "type": "asset",
