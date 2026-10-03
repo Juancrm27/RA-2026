@@ -1106,7 +1106,7 @@
             "toZ": 0.4,
             "duration": 5000,
             "reverse": true,
-            "easeIn": true,
+            "easeIn": false,
             "easeOut": true,
             "easingFunction": "Quadratic"
           }
@@ -1118,7 +1118,8 @@
             "fromZ": -180,
             "toZ": 180,
             "duration": 10000,
-            "shortestPath": false
+            "shortestPath": false,
+            "easeIn": false
           }
         }
       },
@@ -2241,6 +2242,117 @@
       "order": 17.028744183474238,
       "parentId": "377b65a9-0810-4e9a-8efd-261b32b1bd8b",
       "hidden": true
+    },
+    "230a1b26-689c-4874-a3d5-b977564a07c6": {
+      "id": "230a1b26-689c-4874-a3d5-b977564a07c6",
+      "position": [
+        0,
+        0,
+        0.04180464141521578
+      ],
+      "rotation": [
+        0,
+        0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.26,
+        0.31999999999999995,
+        0.31999999999999995
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b0d1a95-9612-4e1b-b0a0-c8ca633213ba/95eb1534-0d1c-4fcf-9474-047dc87890bc",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/playing-cards/0_Card_Container.gltf/0_Card_Container.gltf"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "0_Card_Container.gltf",
+      "order": 1.6149770470650364
+    },
+    "e3229a5c-8c47-408d-bf87-2284f566bd62": {
+      "id": "e3229a5c-8c47-408d-bf87-2284f566bd62",
+      "position": [
+        -1.6434602192104412e-32,
+        0,
+        0.08863276928227282
+      ],
+      "rotation": [
+        0,
+        0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b0d1a95-9612-4e1b-b0a0-c8ca633213ba/95eb1534-0d1c-4fcf-9474-047dc87890bc",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/playing-cards/0_Card_Front.gltf/0_Card_Front.gltf"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "0_Card_Front.gltf",
+      "order": 1.066453141236023
+    },
+    "a7311d60-5ab5-4f57-b15a-47b698ac29cf": {
+      "id": "a7311d60-5ab5-4f57-b15a-47b698ac29cf",
+      "position": [
+        0,
+        -0.3921055383780656,
+        0.316921394554428
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b0d1a95-9612-4e1b-b0a0-c8ca633213ba/95eb1534-0d1c-4fcf-9474-047dc87890bc",
+      "components": {
+        "b4e11433-9f1c-4d47-8c15-847fe87657f1": {
+          "id": "b4e11433-9f1c-4d47-8c15-847fe87657f1",
+          "name": "scale-animation",
+          "parameters": {
+            "autoFrom": true,
+            "toX": 0.5,
+            "toY": 0.5,
+            "toZ": 0.5,
+            "loop": true
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/esferas.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "esferas.glb",
+      "order": 3.176726049470698
     }
   },
   "spaces": {
@@ -2287,7 +2399,14 @@
       },
       "includedSpaces": [
         "0a687c86-deaf-4f23-9f7c-2acd2eeb9310"
-      ]
+      ],
+      "sky": {
+        "type": "gradient",
+        "colors": [
+          "#0f1380",
+          "#08061F"
+        ]
+      }
     },
     "585f02ca-0418-46b7-8317-8926be71e007": {
       "id": "585f02ca-0418-46b7-8317-8926be71e007",
