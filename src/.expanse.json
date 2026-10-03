@@ -2295,7 +2295,10 @@
         0.4
       ],
       "geometry": null,
-      "material": null,
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
       "parentId": "3b0d1a95-9612-4e1b-b0a0-c8ca633213ba/95eb1534-0d1c-4fcf-9474-047dc87890bc",
       "components": {},
       "gltfModel": {
@@ -2313,23 +2316,23 @@
       "id": "a7311d60-5ab5-4f57-b15a-47b698ac29cf",
       "position": [
         0,
-        -0.3921055383780656,
-        0.316921394554428
+        -0.1933579410040065,
+        0.32692139455442804
       ],
       "rotation": [
         0,
         0,
-        0,
+        2.4019248128909613e-18,
         1
       ],
       "scale": [
+        0.09999999999999999,
         0.1,
-        0.1,
-        0.1
+        0.09999999999999999
       ],
       "geometry": null,
       "material": null,
-      "parentId": "3b0d1a95-9612-4e1b-b0a0-c8ca633213ba/95eb1534-0d1c-4fcf-9474-047dc87890bc",
+      "parentId": "3b0d1a95-9612-4e1b-b0a0-c8ca633213ba",
       "components": {
         "b4e11433-9f1c-4d47-8c15-847fe87657f1": {
           "id": "b4e11433-9f1c-4d47-8c15-847fe87657f1",
@@ -2348,11 +2351,12 @@
           "type": "asset",
           "asset": "assets/esferas.glb"
         },
-        "animationClip": "",
-        "loop": true
+        "animationClip": "*",
+        "loop": true,
+        "reverse": false
       },
       "name": "esferas.glb",
-      "order": 3.176726049470698
+      "order": -0.21378860300836022
     }
   },
   "spaces": {
